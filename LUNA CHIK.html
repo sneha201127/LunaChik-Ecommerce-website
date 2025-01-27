@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="LUNA CHIK css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>LUNA CHIK</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">LUNA CHIK
+        <img src="imagelogo.jpg" alt="Brand Logo" style="max-height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#loginModal" data-toggle="modal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#signupModal" data-toggle="modal">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Parallax Section -->
+    <div class="parallax">
+        <!-- Content Overlay -->
+        <div class="content">
+            <h1 style="font-family:'Lucida Sans;">Made for Women</h1>
+            <h4>Inspiring Feminine Luxury</h4>
+            <p>Classic feminine clothing, skin care & cosmetics. Get the best of your life.</p>
+            <div class="logo">
+                <img src="imagelogo.jpg" width="200px" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content glass-effect">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.success.html" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content glass-effect">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.success.html" method="post">
+                        <div class="form-group">
+                            <label for="newUsername">Username</label>
+                            <input type="text" class="form-control" id="newUsername" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Password</label>
+                            <input type="password" class="form-control" id="newPassword" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About the Store Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="n1.jpg" class="img-fluid" alt="About Us">
+        </div>
+        <div class="col-md-6">
+            <h2 style="font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">About LUNA CHIK</h2>
+            <p>At LUNA CHIK, we believe that every woman deserves to feel luxurious, confident, and beautiful. We are committed to providing a curated collection of feminine clothing, skincare, and cosmetics that inspire and elevate your everyday style.</p>
+            <p>Our mission is to offer high-quality products that blend classic elegance with modern sophistication, ensuring that you feel your best every day. Whether you're looking for timeless wardrobe essentials or the latest skincare innovations, LUNA CHIK is your go-to destination for all things feminine and fabulous.</p>
+            <p>Join us on this journey of self-expression and indulgence. Discover the essence of feminine luxury at LUNA CHIK.</p>
+        </div>
+    </div>
+</div>
+
+<div class="parallax1">
+    <div class="slideshow-container">
+        <div class="slide fade active" style="background-image: url('c1.jpg');"></div>
+        <div class="slide fade" style="background-image: url('c2.jpg');"></div>
+        <div class="slide fade" style="background-image: url('c3.jpg');"></div>
+        <div class="slide fade" style="background-image: url('c4.jpg');"></div>
+        <div class="slide fade" style="background-image: url('c5.jpg');"></div>
+        <div class="slide fade" style="background-image: url('c6.jpg');"></div>
+    </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>    
+
+   
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>
+                    Download Our App
+                </h3>
+                <p> Download app for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="app3.jpg">
+                    <img src="app1.jpg">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="imagelogo.jpg"height="200px"width="200px">
+                <h3>Download Our App</h3>
+                <p> </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliates</li>
+                </ul>
+               
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow us on</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023-sneha's project</p>
+    </div>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="LUNA CHIK.js"></script>
+</body>
+</html>
+
