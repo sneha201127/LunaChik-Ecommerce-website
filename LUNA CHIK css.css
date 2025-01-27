@@ -1,0 +1,306 @@
+/* Reset margin and padding */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+   margin: 0;
+   font-family: 'Dancing Script', cursive;
+   overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+   background-color: #c92f86; 
+   padding: 1rem;
+   
+}
+
+.navbar-nav .nav-link {
+   color: #000; /* Black text color */
+   font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+   color: #fff; /* White text color on hover */
+}
+
+/* Parallax Effect */
+.parallax {
+   background-image: url('a1.jpg'); /* Background image for parallax effect */
+   height: 100vh; /* Full viewport height */
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+/* Content Styling */
+.content {
+   position: absolute;
+   top: 50%; /* Center the content vertically */
+   left: 50%; /* Center the content horizontally */
+   transform: translate(-50%, -50%); /* Center the content */
+   width: 500px;
+   text-align: center;
+   color: #fff;
+   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+   padding: 20px;
+   border-radius: 10px;
+}
+
+/* Content Text Styling */
+.content h1 {
+   border: 2px solid #ffffff;
+   padding: 10px;
+   font-size: 50px;
+   margin-top: 0; /* Removed top margin */
+   text-transform: uppercase;
+   color: #e80f8d;
+   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.content h4 {
+   font-size: 30px;
+   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.content p {
+   margin: 20px auto;
+   font-weight: 100;
+   line-height: 25px;
+   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* Button Styling */
+.btn {
+   display: inline-block;
+   background: #e7389b;
+   color: #fff;
+   padding: 8px 30px;
+   margin: 30px 0;
+   border-radius: 30px;
+   transition: background 0.5s;
+}
+
+.btn:hover {
+   background: #c62477;
+}
+
+/* Glass Blur Effect for Modals */
+.glass-effect {
+   color:white;
+   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+   backdrop-filter: blur(10px); /* Blur effect */
+   border-radius: 10px; /* Rounded corners */
+   padding: 20px;
+}
+
+.modal-content {
+   border: none; /* Remove border */
+   background-color: transparent; /* Transparent background for the glass effect */
+   box-shadow: none; /* Remove shadow */
+}
+
+/* Slide Transitions */
+.modal-dialog {
+   transition: transform 0.3s ease-in-out;
+}
+
+.modal.fade .modal-dialog {
+   transform: translateX(-100%); /* Slide in from left */
+}
+
+.modal.fade.show .modal-dialog {
+   transform: translateX(0); /* Centered when modal is shown */
+}
+.success-message {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   text-align: center;
+   background-color: #f7f7f7;
+}
+
+.success-message h1 {
+   font-family: 'Dancing Script', cursive;
+   font-size: 48px;
+   color: #ff69b4;
+   margin-bottom: 20px;
+}
+
+.success-message p {
+   font-family: 'Arial', sans-serif;
+   font-size: 20px;
+   color: #555;
+   margin-bottom: 30px;
+}
+
+.success-message .btn-primary {
+   background-color: #ff69b4;
+   border-color: #ff69b4;
+}
+
+.success-message .btn-primary:hover {
+   background-color: #ff85c0;
+   border-color: #ff85c0;
+}
+
+.parallax1 {
+   position: relative;
+   background-image: url('a1.jpg');
+   height: 500px;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center; /* Adjusted height */
+   width: 100%; /* Adjusted width */
+   overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   overflow: hidden;
+}
+
+/* Individual slide */
+.slide {
+   display: none;
+   flex: 1 0 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+}
+
+/* Show the first slide */
+.active {
+   display: block;
+}
+
+/* Navigation arrows */
+.prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: 40px;  /* Width of the circle */
+   height: 40px; /* Height of the circle */
+   padding: 10px;
+   margin-top: -20px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   border-radius: 50%;  /* Makes the element circular */
+   background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+   text-align: center;  /* Center the arrow inside the circle */
+   line-height: 20px;  /* Vertical centering */
+   transition: background-color 0.3s ease;
+   user-select: none;
+   z-index: 1;
+}
+
+.prev {
+   left: 10px;
+}
+
+.next {
+   right: 10px;
+}
+
+/* Hover effects on arrows */
+.prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+}
+.footer{
+   background:#000;
+   color:#8a8a8a;
+   font-size:14px;
+   padding:60px 0 20px;
+}
+.footer p{
+ color:#8a8a8a;
+}
+.footer h3{
+ color:#fff;
+ margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4{
+ min-width:250px;
+ margin-bottom:20px;
+}
+.footer-col-1{
+ flex-basis:30%;
+}
+.footer-col-2{
+ flex:1;
+ text-align: center;
+}
+.footer-col-1 img{
+ width:180px;
+ margin-bottom:20px;
+}
+.footer-col-3,.footer-col-4{
+ flex-basis:12%;
+ text-align: center;
+}
+ul{
+ list-style-type:none;
+}
+.app-logo{
+ margin-top: 20px;
+ 
+
+}
+.app-logo img{
+ width: 140px;
+}
+.footer hr{
+ border:none;
+ background:#b5b5b5;
+ height:1px;
+ margin:20px 0;
+}
+.copyright{
+ text-align:center;
+}
+.menu-icon{
+ width:28px;
+ margin-left:20px;
+}
+
+.row-2{
+ justify-content: space-between;
+ margin:100px auto 50px;
+}
+select{
+ border: 1px solid #ff523b ;
+ padding: 5px;
+}
+button{
+ width: 100%;
+ height:40px;
+ position: relative;
+ border: none;
+ border-radius: 5px;
+ background-image:url("backimg.jpg");
+ padding: 7px 25px;
+ cursor: pointer;
+ color: white;
+
+}
+
+@media only screen and (max-width:600px){
+   .row{
+       text-align: center;
+   }
+   .col-2,.col-3,.col-4{
+       flex-basis:100%;
+   }
+}
